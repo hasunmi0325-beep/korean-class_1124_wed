@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>초급 한국어 연습 프로그램 (Beginner Korean Practice)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+    }
+    body {
+      background-color: #f0f4f8;
+      color: #222;
+      margin: 0;
+      padding: 20px 12px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 28px 24px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #1e429f;
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .guide-box {
+      background-color: #edf7ed;
+      border-left: 4px solid #2e7d32;
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      font-size: 0.93rem;
+      color: #1b5e20;
+    }
+    .guide-box strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+    .guide-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .set-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn {
+      background-color: #2b6cb0;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+    .btn:hover {
+      background-color: #2c5282;
+    }
+    .btn:active {
+      transform: scale(0.99);
+    }
+    .btn-green {
+      background-color: #2f855a;
+    }
+    .btn-green:hover {
+      background-color: #276749;
+    }
+    .btn-orange {
+      background-color: #dd6b20;
+    }
+    .btn-orange:hover {
+      background-color: #c05621;
+    }
+    .btn-gray {
+      background-color: #718096;
+      margin-top: 6px;
+    }
+    .btn-gray:hover {
+      background-color: #4a5568;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #edf2f7;
+      padding: 10px 16px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #2d3748;
+    }
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: #3182ce;
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+    .section-badge {
+      display: inline-block;
+      background: #2d3748
